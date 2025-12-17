@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>CURSO NOTAS</title>
+    <link rel="icon" type="image/x-icon" href="./public/assets/favicon.ico" />
+    <link href="./public/css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.rtl.min.css">
+</head>
+
+<body>
+    <div class="d-flex" id="wrapper">
+        <!-- Sidebar-->
+        <div class="border-end bg-white" id="sidebar-wrapper">
+            <div class="sidebar-heading border-bottom bg-light">CURSO: PROGRAMACION WEB</div>
+            <div class="list-group list-group-flush">
+                <button id="btnAprobados" class="list-group-item list-group-item-action p-3">
+                    Total Aprobados
+                </button>
+                <button id="btnSupletorios" class="list-group-item list-group-item-action p-3">
+                    Total Supletorios
+                </button>
+                <button id="btnReprobados" class="list-group-item list-group-item-action p-3">
+                    Total Reprobados
+                </button>
+                <button id="btnPromedio" class="list-group-item list-group-item-action p-3">
+                    Promedio Curso
+                </button>
+                <button id="btnEstado" class="list-group-item list-group-item-action p-3">
+                    Estado Curso
+                </button>
+
+            </div>
+        </div>
+        <!-- Page content wrapper-->
+        <div id="page-content-wrapper">
+            <!-- Top navigation-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                <div class="container-fluid">
+                    <button class="btn btn-primary btn-warning" id="sidebarToggle">Desplegar Menu</button>
+                </div>
+            </nav>
+            <!-- Page content-->
+            <div class="container-fluid seccion" id="aprobados">
+                <h1 class="mt-4">TOTAL DE APROBADOS</h1>
+                <p id="totalAprobados"></p>
+            </div>
+
+            <div class="container-fluid seccion d-none" id="supletorios">
+                <h1 class="mt-4">TOTAL SUPLETORIOS</h1>
+                <p id="totalSupletorios"></p>
+            </div>
+
+            <div class="container-fluid seccion d-none" id="reprobados">
+                <h1 class="mt-4">TOTAL REPROBADOS</h1>
+                <p id="totalReprobados"></p>
+            </div>
+
+            <div class="container-fluid seccion d-none" id="promedio">
+                <h1 class="mt-4">PROMEDIO DEL CURSO</h1>
+                <p id="promedioCurso"></p>
+            </div>
+
+            <div class="container-fluid seccion d-none" id="estado">
+                <h1 class="mt-4">ESTADO DEL CURSO</h1>
+                <p id="estadoCurso"></p>
+            </div>
+
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./public/js/scriptsMENU.js"></script>
+    <script src="./public/js/script.js"></script>
+</body>
+
+</html>
